@@ -24,14 +24,12 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body><div>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="  background-color:#c5c5c5;
-">
+<body><div id="bar">
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="  background-color:#c5c5c5;">
         <div class="container"><a class="navbar-brand" href="../index.html">火野嵐的主页</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navcol-1">
+            <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="../grjjwzzt/gerenjianjie.html">个人简介</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../grjjwzzt/gerenjianjie.html" id="link">个人简介</a></li>
                     <li class="nav-item"><a class="nav-link" href="wenzhangzatan.html">文章杂谈</a></li>
                     <li class="nav-item"><a class="nav-link" href="../xxzl/xuexiziliao.html">学习资料</a></li>
                     <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" href="#">更多</a>
@@ -42,7 +40,6 @@
         </div>
     </nav>
 </div>
-
     <div id="wrapper"  style="background-color:rgb(231,231,231);">
         <div id="sidebar-wrapper" style="background-color:rgb(231,231,231);color:rgb(0,0,0);">
             <ul class="sidebar-nav">
@@ -76,22 +73,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
-                                       <div class="container">
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color:rgb(207,206,206);">
-            <div class="container"><a class="navbar-brand" href="#">目录</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse"
-                    id="navcol-1">
-                    <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="wenzhang1.html">对于“过时”技术的“当下思考”</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="wenzhang2.html">在社团第一次全会的演讲</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="wenzhang3.html">读《亮剑》有感</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </div>            
+            <ul class="nav nav-justified ml-auto navbar-nav" style="  background-color:#c5c5c5;>
+            <li class="nav-item"><button class="text-center btn btn-link" style="color:rgb(67,60,60);" data-toggle="collapse" data-target="#under">目录</button></li>
+            <div id="under" class="panel-collapse collapse in">
+    <li class="nav-item" id="li1"><a class="nav-link" href="wenzhang1.html" style="color:rgb(67,60,60);">对“过时”技术的当下思考</a></li>
+    <li class="nav-item" id="li2"><a class="nav-link" href="wenzhang2.html" style="color:rgb(67,60,60);">在社团第一次全会的演讲</a></li>
+    <li class="nav-item" id="li3"><a class="nav-link" href="wenzhang3.html" style="color:rgb(67,60,60);">读《亮剑》有感</a></li></div>
+    </ul>
     </div>
-        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
@@ -99,6 +89,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/Sidebar-Menu.js"></script>
     <script src="assets/js/Simple-Slider1.js"></script>
+    <script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+
 </body>
 
 </html>
